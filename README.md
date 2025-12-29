@@ -123,10 +123,10 @@ This server hosts multiple virtual websites using distinct configurations to dem
 **IP:** `192.168.10.10`
 
 * **Network & DNS Strategy:** The Domain Controller was manually configured to bypass the default Microsoft DNS service. Instead, its network adapter points explicitly to the external BIND servers (`192.168.10.20` / `.21`) for all resolution needs, ensuring strict separation of duties.
-    * **Evidence 1:** [📸 IP & DNS Configuration (ipconfig)](evidence/Win%20Server%201.0.jpg)
+    * **Evidence 1:** [📸 IP & DNS Configuration (ipconfig)](evidence/Win%20Server%201.0.png)
 
 * **Object Management:** A structured AD hierarchy was implemented, featuring a dedicated "Workstations" Organizational Unit (OU) and user accounts (`Student1`, `Student2`) for testing authentication.
-    * **Evidence 2:** [📸 Active Directory Users & Computers](evidence/Win%20Server%201.2.jpg)
+    * **Evidence 2:** [📸 Active Directory Users & Computers](evidence/Win%20Server%201.2.pmg)
 
 * **BIND Integration Verification:** Verified that the Windows Server correctly resolves internal hostnames and reverse lookups via the Linux BIND server, confirming the successful integration of the hybrid environment.
     * **Evidence 3:** [📸 Nslookup Verification](evidence/Win%20Server%201.1.png)
