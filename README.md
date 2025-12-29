@@ -176,7 +176,7 @@ This repository is organized by service role. Click the file names below to view
 
 ### **1. Infrastructure Services (DNS & Web)**
 
-| Component | File Name | Description |
+| Component | File Name | Description | 
 | :--- | :--- | :--- |
 | **DNS Master** | [**named.conf**](configs/dns-master/named.conf) | Primary BIND9 configuration including TSIG keys and ACLs. |
 | | [**for.example.local.zone**](configs/dns-master/for.example.local.zone) | Forward zone defining A records for web infrastructure. |
