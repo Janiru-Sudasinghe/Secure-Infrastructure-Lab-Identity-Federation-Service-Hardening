@@ -1,0 +1,28 @@
+$TTL 86400
+@   IN  SOA ns1.example.local. admin.example.local. (
+        2025081601 ; serial
+        3600       ; refresh
+        1800       ; retry
+        604800     ; expire
+        86400 )
+
+    IN  NS  ns1.example.local.
+    IN  NS  ns2.example.local.
+
+; ----------------------------------------------------------------------
+; PTR Records (Last Octet -> Hostname)
+; ----------------------------------------------------------------------
+; Servers
+10  IN PTR dc01.corp.example.local.
+20  IN PTR ns1.example.local.
+21  IN PTR ns2.example.local.
+30  IN PTR web01.example.local.
+
+; Clients
+101 IN PTR winclient.corp.example.local.
+102 IN PTR linuxclient.corp.example.local.
+
+; Web Application Aliases
+31  IN PTR app1.example.local.
+32  IN PTR app2.example.local.
+33  IN PTR app3.example.local.

@@ -1,0 +1,26 @@
+$TTL 86400
+@   IN  SOA ns1.example.local. admin.example.local. (
+        2025081601 ; serial
+        3600       ; refresh
+        1800       ; retry
+        604800     ; expire
+        86400 )
+
+    IN  NS  ns1.example.local.
+    IN  NS  ns2.example.local.
+
+; ----------------------------------------------------------------------
+; Host A Records
+; ----------------------------------------------------------------------
+dc01            IN A 192.168.10.10
+winclient       IN A 192.168.10.101
+linuxclient     IN A 192.168.10.102
+
+; ----------------------------------------------------------------------
+; SRV Records for Active Directory Discovery
+; ----------------------------------------------------------------------
+_ldap._tcp.dc._msdcs      IN SRV 0 100 389 dc01.corp.example.local.
+_kerberos._tcp.dc._msdcs  IN SRV 0 100 88  dc01.corp.example.local.
+_kerberos._udp.dc._msdcs  IN SRV 0 100 88  dc01.corp.example.local.
+_kerberos._tcp            IN SRV 0 100 88  dc01.corp.example.local.
+_ldap._tcp                IN SRV 0 100 389 dc01.corp.example.local.
