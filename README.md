@@ -183,7 +183,7 @@ This repository is organized by service role. Click the file names below to view
 | | [**for.corp.example.local.zone**](configs/dns-master%20/for.corp.example.local.zone) | AD-integrated zone containing SRV records for DC discovery. |
 | | [**reverse.zone**](configs/dns-master%20/reverse.zone) | Reverse lookup zone (PTR records) for the `192.168.10.0/24` subnet. |
 | **DNS Slave** | [**named.conf**](configs/dns-slave%20/named.conf) | Secondary BIND9 config setup for automatic zone replication. |
-| **Web Server** | [**vhost.conf**](configs/web-server%20/vhost.conf) | Apache Virtual Host definitions for Name-Based and IP-Based sites. |
+| **Web Server** | [**vhost.conf**](configs/web-server/vhost.conf) | Apache Virtual Host definitions for Name-Based and IP-Based sites. |
 
 ### **2. Identity Management (Linux Client)**
 
