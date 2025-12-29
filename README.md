@@ -170,7 +170,34 @@ This server hosts multiple virtual websites using distinct configurations to dem
 
 ---
 
-## 📂 Configuration & Scripts Repository
+## 📂 Configuration & Codebase Navigation
+
+This repository is organized by service role. Click the file names below to view the sanitized configuration code used in this project.
+
+### **1. Infrastructure Services (DNS & Web)**
+
+| Component | File Name | Description |
+| :--- | :--- | :--- |
+| **DNS Master** | [**named.conf**](configs/dns-master/named.conf) | Primary BIND9 configuration including TSIG keys and ACLs. |
+| | [**for.example.local.zone**](configs/dns-master/for.example.local.zone) | Forward zone defining A records for web infrastructure. |
+| | [**for.corp.example.local.zone**](configs/dns-master/for.corp.example.local.zone) | AD-integrated zone containing SRV records for DC discovery. |
+| | [**reverse.zone**](configs/dns-master/reverse.zone) | Reverse lookup zone (PTR records) for the `192.168.10.0/24` subnet. |
+| **DNS Slave** | [**named.conf**](configs/dns-slave/named.conf) | Secondary BIND9 config setup for automatic zone replication. |
+| **Web Server** | [**vhost.conf**](configs/web-server/vhost.conf) | Apache Virtual Host definitions for Name-Based and IP-Based sites. |
+
+### **2. Identity Management (Linux Client)**
+
+| Component | File Name | Description |
+| :--- | :--- | :--- |
+| **Kerberos** | [**krb5.conf**](configs/linux-client/krb5.conf) | Realm configuration mapping the Linux client to the Windows KDC. |
+| **SSSD** | [**sssd.conf**](configs/linux-client/sssd.conf) | System Security Services Daemon config for AD authentication. |
+
+### **3. Automation Scripts**
+
+| Script Name | Path | Utility |
+| :--- | :--- | :--- |
+| **DNS Master Setup** | [**setup_dns_master.sh**](scripts/setup_dns_master.sh) | Bash script to automate BIND installation, zone creation, and firewall rules. |
+| **Web Server Setup** | [**setup_web.sh**](scripts/setup_web.sh) | Bash script to deploy Apache, generate SSL certs, and configure VHosts. |
 
 
 
