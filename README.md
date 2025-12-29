@@ -25,7 +25,7 @@ The architecture consists of **6 Virtual Machines** operating on a strictly isol
 ## Network Topology Diagram
 
 <p align="center">
-  <img src="./images/Diagram.png" width="600" alt="Network Topology Diagram">
+  <img src="./evidence/Diagram.png" width="600" alt="Network Topology Diagram">
 </p>
 
 ---
