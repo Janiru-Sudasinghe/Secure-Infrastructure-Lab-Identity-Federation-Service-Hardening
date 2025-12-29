@@ -178,10 +178,10 @@ This repository is organized by service role. Click the file names below to view
 
 | Component | File Name | Description | 
 | :--- | :--- | :--- |
-| **DNS Master** | [**named.conf**](configs/dns-master/named.conf) | Primary BIND9 configuration including TSIG keys and ACLs. |
-| | [**for.example.local.zone**](configs/dns-master/for.example.local.zone) | Forward zone defining A records for web infrastructure. |
-| | [**for.corp.example.local.zone**](configs/dns-master/for.corp.example.local.zone) | AD-integrated zone containing SRV records for DC discovery. |
-| | [**reverse.zone**](configs/dns-master/reverse.zone) | Reverse lookup zone (PTR records) for the `192.168.10.0/24` subnet. |
+| **DNS Master** | [**named.conf**](configs/dns-master%20/named.conf) | Primary BIND9 configuration including TSIG keys and ACLs. |
+| | [**for.example.local.zone**](configs/dns-master%20/for.example.local.zone) | Forward zone defining A records for web infrastructure. |
+| | [**for.corp.example.local.zone**](configs/dns-master%20/for.corp.example.local.zone) | AD-integrated zone containing SRV records for DC discovery. |
+| | [**reverse.zone**](configs/dns-master%20/reverse.zone) | Reverse lookup zone (PTR records) for the `192.168.10.0/24` subnet. |
 | **DNS Slave** | [**named.conf**](configs/dns-slave/named.conf) | Secondary BIND9 config setup for automatic zone replication. |
 | **Web Server** | [**vhost.conf**](configs/web-server/vhost.conf) | Apache Virtual Host definitions for Name-Based and IP-Based sites. |
 
