@@ -182,15 +182,15 @@ This repository is organized by service role. Click the file names below to view
 | | [**for.example.local.zone**](configs/dns-master%20/for.example.local.zone) | Forward zone defining A records for web infrastructure. |
 | | [**for.corp.example.local.zone**](configs/dns-master%20/for.corp.example.local.zone) | AD-integrated zone containing SRV records for DC discovery. |
 | | [**reverse.zone**](configs/dns-master%20/reverse.zone) | Reverse lookup zone (PTR records) for the `192.168.10.0/24` subnet. |
-| **DNS Slave** | [**named.conf**](configs/dns-slave/named.conf) | Secondary BIND9 config setup for automatic zone replication. |
-| **Web Server** | [**vhost.conf**](configs/web-server/vhost.conf) | Apache Virtual Host definitions for Name-Based and IP-Based sites. |
+| **DNS Slave** | [**named.conf**](configs/dns-slave%20/named.conf) | Secondary BIND9 config setup for automatic zone replication. |
+| **Web Server** | [**vhost.conf**](configs/web-server%20/vhost.conf) | Apache Virtual Host definitions for Name-Based and IP-Based sites. |
 
 ### **2. Identity Management (Linux Client)**
 
 | Component | File Name | Description |
 | :--- | :--- | :--- |
-| **Kerberos** | [**krb5.conf**](configs/linux-client/krb5.conf) | Realm configuration mapping the Linux client to the Windows KDC. |
-| **SSSD** | [**sssd.conf**](configs/linux-client/sssd.conf) | System Security Services Daemon config for AD authentication. |
+| **Kerberos** | [**krb5.conf**](configs/linux-client%20/krb5.conf) | Realm configuration mapping the Linux client to the Windows KDC. |
+| **SSSD** | [**sssd.conf**](configs/linux-client%20/sssd.conf) | System Security Services Daemon config for AD authentication. |
 
 ### **3. Automation Scripts**
 
